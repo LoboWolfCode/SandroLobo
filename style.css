@@ -5,7 +5,7 @@ h1, h2, h3, h4, p{
   }
 
 body {
-    background-color: black;
+    background-color: skyblue;
 }
 
 h4 {
@@ -14,4 +14,9 @@ h4 {
     font-style: normal;
     color: white;
     margin: auto;
+}
+
+fieldset {
+    border-color: white;
+    border-style: dotted;
 }
