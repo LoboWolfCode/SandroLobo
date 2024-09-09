@@ -1,5 +1,5 @@
 :root {
-    --base-color: white;
+    --base-color: #f6f9fc;
     --base-variant: #e8e9ed;
     --text-color: #111528;
     --secondary-text: #232738;
@@ -8,7 +8,7 @@
 }
 
 .darkmode {
-    --base-color: #070b1d;
+    --base-color: #1E2022;
     --base-variant: #101425;
     --text-color: #ffffff;
     --secondary-text: #a4a5b8;
@@ -39,7 +39,8 @@ body {
     align-items: center;
     position: fixed;
     top: 20px;
-    right: 20px;        
+    right: 20px;
+        
 }
 
 #theme-switch:hover {
@@ -62,11 +63,92 @@ body {
     display: block;
 }
 
-button:active {
-    background: #e5e5e5;
+#theme-switch:active {
     -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
        -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
             box-shadow: inset 0px 0px 5px #444444;
      outline: none;
 }
 
+.container {
+    display: inline-block;
+}
+
+.text {
+    font-size: 6vw;
+    letter-spacing: 7px;
+    font-family: Monaco, Consolas, Lucida Console, monospace;
+    color: #747fe0;
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: normal;
+    animation:
+        typing 1s steps(14),
+        cursor .4s step-end infinite alternate;
+}
+
+/* cursor blinking */
+@keyframes cursor {
+    50% { border-color: transparent;}
+}
+
+/* typing effect */
+@keyframes typing {
+    from {width: 0px;}
+}
+
+/* Projects&Contact Style */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 85px;
+  padding: 15px;
+  gap: 20px; /* Adjust spacing between buttons */
+}
+
+/*hover animation*/
+.projects::after {
+    content: '';
+    position: absolute;
+    height: 5px;
+    left: 12%;
+    bottom: 25%;
+    width: 0;
+    background: #747fe0;
+    transition: width .15s;
+}
+
+.projects:hover::after {
+    width: 28%;
+}
+
+.contact::after {
+    content: '';
+    position: absolute;
+    height: 5px;
+    left: 61%;
+    bottom: 25%;
+    width: 0;
+    background: #747fe0;
+    transition: width .15s;
+}
+
+.contact:hover::after {
+    width: 27%;
+}
+
+.button-container a,
+.button-container button {
+  text-decoration: none;
+  color: var(--text-color);
+    font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+  font-weight: bold;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
