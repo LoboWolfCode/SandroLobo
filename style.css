@@ -40,7 +40,7 @@ body {
     position: fixed;
     top: 20px;
     right: 20px;
-        
+    filter: drop-shadow(0px 1px 3px var(--base-variant))
 }
 
 #theme-switch:hover {
@@ -99,47 +99,65 @@ body {
     from {width: 0px;}
 }
 
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+        .button-container {
+          justify-content: center; /* Center-align items on smaller screens */
+        }
+      }
+
 /* Projects&Contact Style */
 .button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
+    display:flex;
+    justify-content: right;
+    align-items: right;
     top: 20px;
     right: 85px;
-  padding: 15px;
+    position: absolute;
   gap: 20px; /* Adjust spacing between buttons */
 }
 
 /*hover animation*/
+.projects {
+    display: inline-block;
+    padding-bottom: 0.25rem;
+    position: relative;
+    margin-right: auto;
+}
+
 .projects::after {
-    content: '';
+    content: "";
     position: absolute;
-    height: 5px;
-    left: 12%;
-    bottom: 25%;
+    height: 3px;
+    left: 0;
+    bottom: 6PX;
     width: 0;
     background: #747fe0;
     transition: width .15s;
 }
 
 .projects:hover::after {
-    width: 28%;
+    width: 100%;
+}
+
+.contact {
+    display: inline-block;
+    padding-bottom: 0.25rem;
+    position: relative;
 }
 
 .contact::after {
-    content: '';
+    content: "";
     position: absolute;
-    height: 5px;
-    left: 61%;
-    bottom: 25%;
+    height: 3px;
+    left: 0;
+    bottom: 6PX;
     width: 0;
     background: #747fe0;
     transition: width .15s;
 }
 
 .contact:hover::after {
-    width: 27%;
+    width: 100%;
 }
 
 .button-container a,
@@ -152,3 +170,4 @@ body {
   border: none;
   cursor: pointer;
 }
+
