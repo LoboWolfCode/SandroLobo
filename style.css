@@ -39,8 +39,11 @@ body {
     align-items: center;
     position: fixed;
     top: 20px;
-    right: 20px;
-        
+    right: 20px;        
+}
+
+#theme-switch:hover {
+  cursor: pointer;
 }
 
 #theme-switch svg {
