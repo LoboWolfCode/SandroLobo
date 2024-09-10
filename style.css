@@ -171,3 +171,99 @@ body {
   cursor: pointer;
 }
 
+/*Terminal*/
+.about-container {
+    margin-top: 20vh;
+    margin: 0 auto;
+}
+
+
+.about-container .terminal .terminal-header .green {
+    background-color: #33c948;
+    border: 1px solid #2dbb41;
+}
+
+.about-container .terminal .terminal-header .red {
+    background-color: #f96256;
+    border: 1px solid #f65549;
+}
+
+.about-container .terminal .terminal-header .yellow {
+    background-color: #fdbc3d;
+    border: 1px solid #ffb524;
+}
+
+.about-container .terminal .terminal-header .header-button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-left: 9px;
+}
+
+.about-container .terminal .terminal-header {
+    height: 28px;
+    background-color: var(--base-variant);
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.about-container .terminal .terminal-window {
+    background-color: #5a5d7a;
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: 0 50px 100px rgba(50, 50, 93, .15), 0 15px 35px rgba(50, 50, 93, .2), 0 5px 15px rgba(0, 0, 0, .12);
+    font-family: Monaco, Consolas, Lucida Console, monospace;
+}
+
+.about-container .terminal .terminal-window a {
+    color: #35feff;
+}
+
+.about-container .terminal .terminal-window .statement .input-statement {
+    color: #f7f7f7;
+}
+
+.about-container .terminal .terminal-window .statement .return-statement {
+    color: #e7d184;
+}
+
+.about-container .terminal .terminal-window .statement {
+    margin-bottom: 25px;
+    margin-left: 35px;
+    margin-right: 35px;
+    line-height: 24px;
+}
+
+.about-container .terminal .terminal-window .statement:last-child {
+    padding-bottom: 60px;
+}
+
+.about-container .terminal .terminal-window .statement:first-child {
+    padding-top: 35px;
+}
+
+body {
+    margin: 100px 20px 0; /* Top, right, bottom, left */
+  }
+
+  @media only screen and (max-width: 600px) {
+    /* Styles for mobile devices */
+    body {
+      font-size: 16px; /* Adjust font size as needed */
+    }
+    .body {
+      width: 10%; /* Make the container more responsive */
+    }
+    .image {
+      width: 100%; /* Make images responsive */
+    }
+  }
+
+  html {
+    min-height: 100vh;
+    font-size: 0.9em;
+    line-height: 30px;
+    max-width: 1000px;
+    margin: auto;
+}
