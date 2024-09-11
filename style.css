@@ -28,97 +28,15 @@ body {
     
 }
 
-.profile {
-    height: 50px;
-    width: 50px;
-    padding: 0;
-    border-radius: 50%;
-    border: none;
-    background-color: var(--base-variant);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 30px;
-    left: 20%;
-    filter: drop-shadow(0px 1px 3px var(--base-variant))
-}
-
-#theme-switch {
-    height: 50px;
-    width: 50px;
-    padding: 0;
-    border-radius: 50%;
-    border: none;
-    background-color: var(--base-variant);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 30px;
-    right: 20%;
-    filter: drop-shadow(0px 1px 3px var(--base-variant))
-}
-
-#theme-switch:hover {
-  cursor: pointer;
-}
-
-#theme-switch svg {
-    fill: var(--primary-color);
-}
-
-#theme-switch svg:last-child {
-    display: none;
-}
-
-.darkmode #theme-switch svg:first-child {
-    display: none;
-}
-
-.darkmode #theme-switch svg:last-child {
-    display: block;
-}
-
-#theme-switch:active {
-    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
-       -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
-            box-shadow: inset 0px 0px 5px #444444;
-     outline: none;
-}
-
-.container {
-    display: inline-block;
-}
-
-.nav-bar {
-    margin-bottom: -20px;
-}
-
-.input-statement1 {
-    font-size: 6vw;
-    letter-spacing: 7px;
-    font-family: Monaco, Consolas, Lucida Console, monospace;
-    font-size: 16px;
-    color: #f7f7f7;
-    border-right: 5px solid;
-    width: 3%;
-    white-space: nowrap;
-    overflow: hidden;
-    line-height: normal;
-    animation:
-        typing 0.5 steps(2),
-        cursor .4s step-end infinite alternate;
-}
-
 .text {
-    font-size: 4vw;
+    font-size: 4em;
     letter-spacing: 7px;
     font-family: Monaco, Consolas, Lucida Console, monospace;
     color: #747fe0;
     border-right: 5px solid;
     width: 100%;
-    margin-bottom: -50px;
+    margin-bottom: -1px;
+    margin-top: auto;
     white-space: nowrap;
     overflow: hidden;
     line-height: normal;
@@ -143,23 +61,13 @@ body {
         }
       }
 
-/* Projects&Contact Style */
-.button-container {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    top: 30px;
-    right: 50%;
-    left: 50%;
-    position: absolute;
-  gap: 20px; /* Adjust spacing between buttons */
-  /* Responsive adjustments */
-  @media screen and (max-width: 768px) { /* Adjust breakpoint as needed */
-    flex-direction:row;
-    align-items: flex-start;
-    gap: 10px; /* Adjust spacing for smaller screens */
-  }
+
+body {
+    background-color: var(--base-color);
+    color: var(--text-color);
+    font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+    height: 3000px;
+    padding-top: 0px;
 }
 
 h4 {
@@ -173,63 +81,6 @@ h4 {
 
 .sidep {
     color: #747fe0; 
-}
-
-/*hover animation*/
-.projects {
-    display: inline-block;
-    padding-bottom: 0.25rem;
-    position: relative;
-    margin-right: auto;
-}
-
-.projects::after {
-    content: "";
-    position: absolute;
-    height: 3px;
-    left: 0;
-    bottom: 6PX;
-    width: 0;
-    background: #747fe0;
-    transition: width .15s;
-}
-
-.projects:hover::after {
-    width: 100%;
-}
-
-
-
-.contact {
-    display: inline-block;
-    padding-bottom: 0.25rem;
-    position: relative;
-}
-
-.contact::after {
-    content: "";
-    position: absolute;
-    height: 3px;
-    left: 0;
-    bottom: 6PX;
-    width: 0;
-    background: #747fe0;
-    transition: width .15s;
-}
-
-.contact:hover::after {
-    width: 100%;
-}
-
-.button-container a,
-.button-container button {
-  text-decoration: none;
-  color: var(--text-color);
-    font-family: Camphor, Open Sans, Segoe UI, sans-serif;
-  font-weight: 3200;
-  padding: 10px 15px;
-  border: none;
-  cursor: pointer;
 }
 
 /*Terminal*/
@@ -321,6 +172,22 @@ body {
     }
   }
 
+.input-statement1 {
+    font-size: 6vw;
+    letter-spacing: 7px;
+    font-family: Monaco, Consolas, Lucida Console, monospace;
+    font-size: 16px;
+    color: #f7f7f7;
+    border-right: 5px solid;
+    width: 3%;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: normal;
+    animation:
+        typing 0.5 steps(2),
+        cursor .4s step-end infinite alternate;
+}
+
   html {
     min-height: 100vh;
     font-size: 0.9em;
@@ -328,3 +195,15 @@ body {
     max-width: 1000px;
     margin: auto;
 }
+
+/*SOMEHOW KEEPS BLINKER CLOSE*/
+.container {
+    display: inline-block;
+}
+
+@media (max-width: 600x) {
+    .text {
+        font-size: 1.3em;
+    }
+}
+
