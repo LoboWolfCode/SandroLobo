@@ -29,7 +29,7 @@ body {
 }
 
 .text {
-    font-size: 4em;
+    font-size: 4vw;
     letter-spacing: 7px;
     font-family: Monaco, Consolas, Lucida Console, monospace;
     color: #747fe0;
