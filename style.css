@@ -38,9 +38,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    top: 20px;
-    right: 20px;
+    position: absolute;
+    top: 30px;
+    left: 20%;
     filter: drop-shadow(0px 1px 3px var(--base-variant))
 }
 
@@ -55,8 +55,8 @@ body {
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: 20px;
-    right: 20px;
+    top: 30px;
+    right: 20%;
     filter: drop-shadow(0px 1px 3px var(--base-variant))
 }
 
@@ -91,6 +91,10 @@ body {
     display: inline-block;
 }
 
+.nav-bar {
+    margin-bottom: -20px;
+}
+
 .input-statement1 {
     font-size: 6vw;
     letter-spacing: 7px;
@@ -108,12 +112,13 @@ body {
 }
 
 .text {
-    font-size: 6vw;
+    font-size: 4vw;
     letter-spacing: 7px;
     font-family: Monaco, Consolas, Lucida Console, monospace;
     color: #747fe0;
     border-right: 5px solid;
     width: 100%;
+    margin-bottom: -50px;
     white-space: nowrap;
     overflow: hidden;
     line-height: normal;
@@ -140,11 +145,13 @@ body {
 
 /* Projects&Contact Style */
 .button-container {
-    display:flex;
-    justify-content: right;
-    align-items: right;
-    top: 20px;
-    right: 85px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    top: 30px;
+    right: 50%;
+    left: 50%;
     position: absolute;
   gap: 20px; /* Adjust spacing between buttons */
   /* Responsive adjustments */
@@ -153,6 +160,19 @@ body {
     align-items: flex-start;
     gap: 10px; /* Adjust spacing for smaller screens */
   }
+}
+
+h4 {
+    font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+    font-weight: 200;
+    font-size: 1.3em;
+    line-height: 40px;
+    color: var(--text-color);
+    margin: 80px 0;
+}
+
+.sidep {
+    color: #747fe0; 
 }
 
 /*hover animation*/
@@ -206,7 +226,7 @@ body {
   text-decoration: none;
   color: var(--text-color);
     font-family: Camphor, Open Sans, Segoe UI, sans-serif;
-  font-weight: bold;
+  font-weight: 3200;
   padding: 10px 15px;
   border: none;
   cursor: pointer;
