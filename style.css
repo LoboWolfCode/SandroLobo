@@ -16,6 +16,58 @@
     --accent-color: #0071ff;    
 }
 
+/*THEME SWITCH*/
+#theme-switch {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--base-variant);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 30px;
+    right: 12%;
+    filter: drop-shadow(0px 1px 3px var(--base-variant));
+}
+
+#theme-switch:hover {
+  cursor: pointer;
+}
+
+#theme-switch svg {
+    fill: var(--primary-color);
+}
+
+#theme-switch svg:last-child {
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child {
+    display: none;
+}
+
+.darkmode #theme-switch svg:last-child {
+    display: block;
+}
+
+#theme-switch:active {
+    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+       -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+            box-shadow: inset 0px 0px 5px #444444;
+     outline: none;
+}
+
+.container {
+    display: inline-block;
+}
+
+.nav-bar {
+    margin-bottom: -20px;
+}
+
 body {
     min-height: 100vh;
     background-color: var(--base-color);
@@ -29,7 +81,7 @@ body {
 }
 
 .text {
-    font-size: 4vw;
+    font-size: 6.5vw;
     letter-spacing: 7px;
     font-family: Monaco, Consolas, Lucida Console, monospace;
     color: #747fe0;
@@ -66,10 +118,8 @@ body {
     background-color: var(--base-color);
     color: var(--text-color);
     font-family: Camphor, Open Sans, Segoe UI, sans-serif;
-    height: 3000px;
     padding-top: 0px;
 }
-
 h4 {
     font-family: Camphor, Open Sans, Segoe UI, sans-serif;
     font-weight: 200;
@@ -80,7 +130,8 @@ h4 {
 }
 
 .sidep {
-    color: #747fe0; 
+    color: #747fe0;
+    text-decoration: none; 
 }
 
 /*Terminal*/
@@ -207,3 +258,146 @@ body {
     }
 }
 
+/*Project CSS*/
+.projects, .Contact-me {
+    color: var(--text-color);
+    font-family: Monaco, Consolas, Lucida Console, monospace;
+    font-weight: 500;
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    text-decoration-line:underline;
+    text-decoration-style:dotted;
+    text-decoration-color: #747fe0;
+    text-decoration-thickness: 13px;
+}
+
+
+/*CARD CSS*/
+
+.card-img-top {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .card-img-top {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+/* Float four columns side by side */
+.card {
+    float: left;
+    width: 25%;
+    padding: 0 30px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .card {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card-body {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: var(--base-variant);
+    border-radius: 8px;
+  }
+
+
+/*CARD TAG CSS*/
+.tag-cloud {
+    display: inline-block;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 25px;
+    background-color: #747fe0;
+    margin-top: 8px;
+  }
+
+  .tag-cloud-html {
+    display: inline-block;
+    color: var(--text-color);
+    padding: 8px 20px;
+    border-radius: 25px;
+    border-style:dotted;
+    border-color: rgb(255, 128, 0);
+    background-color: var(--base-color);
+    margin-top: 8px;
+  }
+
+  .tag-cloud-css {
+    display: inline-block;
+    color: var(--text-color);
+    padding: 8px 20px;
+    border-radius: 25px;
+    border-style:dotted;
+    border-color: #b174e0;
+    background-color: var(--base-color);
+    margin-top: 8px;
+  }
+
+  .tag-cloud-js {
+    display: inline-block;
+    color: var(--text-color);
+    padding: 8px 20px;
+    border-radius: 25px;
+    border-style:dotted;
+    border-color: #33c948;
+    background-color: var(--base-color);
+    margin-top: 8px;
+  }
+
+.btn-primary {
+    color: #747fe0;
+}
+
+/*Contact-List*/
+.contact-list {
+    margin: 0 auto;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 100px;
+}
+
+.contact-l {
+    color: #747fe0;
+}
+
+  /*Footer*/
+  .footer {
+    margin: 0 auto;
+    font-size: .8em;
+    line-height: 1.5em;
+    font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+    text-align: center;
+    padding-bottom: 50px;
+    color: #525f7f;
+}
