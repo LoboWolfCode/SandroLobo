@@ -298,6 +298,10 @@ body {
 
 /*CARD CSS*/
 
+.card-text {
+  height: 20rem;
+}
+
 .card-img-top {
     width: 100%;
     border-radius: 8px;
@@ -348,12 +352,11 @@ body {
     border-radius: 8px;
   }
 
-
 /*CARD TAG CSS*/
 .tag-cloud {
     display: inline-block;
     color: white;
-    padding: 8px 20px;
+    padding: 4px 10px;
     border-radius: 25px;
     background-color: #747fe0;
     margin-top: 8px;
@@ -362,7 +365,7 @@ body {
   .tag-cloud-html {
     display: inline-block;
     color: var(--text-color);
-    padding: 8px 20px;
+    padding: 4px 10px;
     border-radius: 25px;
     border-style:dotted;
     border-color: rgb(255, 128, 0);
@@ -373,7 +376,7 @@ body {
   .tag-cloud-css {
     display: inline-block;
     color: var(--text-color);
-    padding: 8px 20px;
+    padding: 4px 10px;
     border-radius: 25px;
     border-style:dotted;
     border-color: #b174e0;
@@ -384,13 +387,35 @@ body {
   .tag-cloud-js {
     display: inline-block;
     color: var(--text-color);
-    padding: 8px 20px;
+    padding: 4px 10px;
     border-radius: 25px;
     border-style:dotted;
     border-color: #33c948;
     background-color: var(--base-color);
     margin-top: 8px;
   }
+
+.tag-cloud-reactjs {
+  display: inline-block;
+  color: var(--text-color);
+  padding: 4px 10px;
+  border-radius: 25px;
+  border-style:dotted;
+  border-color: #3399c9;
+  background-color: var(--base-color);
+  margin-top: 8px;
+}
+
+.tag-cloud-json {
+  display: inline-block;
+  color: var(--text-color);
+  padding: 4px 10px;
+  border-radius: 25px;
+  border-style:dotted;
+  border-color: #3f5660;
+  background-color: var(--base-color);
+  margin-top: 8px;
+}
 
 .btn-primary {
     color: #747fe0;
