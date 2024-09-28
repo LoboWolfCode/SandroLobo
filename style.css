@@ -336,13 +336,19 @@ body {
   
   /* Responsive columns */
   @media screen and (max-width: 600px) {
-    .card {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
-  }
+      .card {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+      }
   
+      /* Center cards on smaller displays */
+      .row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+  }
   /* Style the counter cards */
   .card-body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
