@@ -16,6 +16,10 @@
     --accent-color: #0071ff;    
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /*THEME SWITCH*/
 #theme-switch {
     height: 50px;
@@ -290,10 +294,9 @@ body {
     margin-top: 50px;
     margin-bottom: 80px;
     text-decoration-line:underline;
-    text-decoration-style:dotted;
     text-decoration-color: #747fe0;
     text-underline-offset: 20px;
-    text-decoration-thickness: 13px;
+    text-decoration-thickness: 8px;
 }
 
 
@@ -322,11 +325,13 @@ body {
 .card {
     float: left;
     width: 25%;
-    padding: 0 30px;
+    padding: 10px 30px;
   }
   
   /* Remove extra left and right margins, due to padding */
-  .row {margin: 0 -5px;}
+  .row {
+    margin: 0 -5px;
+  }
   
   /* Clear floats after the columns */
   .row:after {
@@ -348,6 +353,10 @@ body {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+      }
+
+      .card-text {
+        height: auto;
       }
   }
   /* Style the counter cards */
@@ -431,6 +440,17 @@ body {
   border-radius: 25px;
   border-style:dotted;
   border-color: #ffd325;
+  background-color: var(--base-color);
+  margin-top: 8px;
+}
+
+.tag-cloud-Unknown {
+  display: inline-block;
+  color: var(--text-color);
+  padding: 4px 10px;
+  border-radius: 25px;
+  border-style:dotted;
+  border-color: #545246;
   background-color: var(--base-color);
   margin-top: 8px;
 }
