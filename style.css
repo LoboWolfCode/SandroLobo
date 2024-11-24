@@ -271,6 +271,10 @@ body {
     margin: auto;
 }
 
+.kr {
+  font-size: 1rem;
+}
+
 /*SOMEHOW KEEPS BLINKER CLOSE*/
 .container {
     display: inline-block;
@@ -320,25 +324,29 @@ body {
       margin-bottom: 20px;
     }
   }
-
+  
+/* Remove extra left and right margins, due to padding */
 /* Float four columns side by side */
 .card {
-    float: left;
+    float: none;
     width: 25%;
     padding: 10px 30px;
-  }
-  
-  /* Remove extra left and right margins, due to padding */
-  .row {
+    display: inline-block;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
     margin: 0 -5px;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
+    text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
     content: "";
     display: table;
     clear: both;
-  }
+}
+ 
   
   /* Responsive columns */
   @media screen and (max-width: 600px) {
