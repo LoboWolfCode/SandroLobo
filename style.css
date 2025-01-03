@@ -280,11 +280,37 @@ body {
     display: inline-block;
 }
 
-@media (max-width: 600x) {
+@media (max-width: 1000px) {
+  .text {
+      font-size: 4.5em;
+  }
+}
+
+@media (max-width: 850px) {
+  .text {
+      font-size: 3.5em;
+  }
+}
+
+@media (max-width: 720px) {
+  .text {
+      font-size: 3em;
+  }
+}
+
+@media (max-width: 650px) {
     .text {
-        font-size: 1.3em;
+        font-size: 2em;
     }
 }
+
+@media (max-width: 370px) {
+  .text {
+      font-size: 1.5em;
+  }
+}
+
+
 
 /*Project CSS*/
 .projects, .Contact-me {
