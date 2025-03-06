@@ -412,6 +412,17 @@ body {
     margin-top: 8px;
   }
 
+.tag-cloud-GBS {
+  display: inline-block;
+    color: var(--text-color);
+    padding: 4px 10px;
+    border-radius: 25px;
+    border-style:dotted;
+    border-color: #C92C61;
+    background-color: var(--base-color);
+    margin-top: 8px;
+}
+
   .tag-cloud-html {
     display: inline-block;
     color: var(--text-color);
