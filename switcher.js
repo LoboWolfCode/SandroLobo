@@ -24,3 +24,24 @@ const trackPrevious = (el) => {
 trackPrevious(switcher);
 
 
+const saveToLocalStorage = (el) => {
+  const radios = el.querySelectorAll('input[type="radio"]');
+  const storageKey = "switcher-selection";
+
+  // restore saved selection
+  const saved = localStorage.getItem(storageKey);
+  if (saved) {
+    const radio = el.querySelector(`input[type="radio"][c-option="${saved}"]`);
+    if (radio) radio.checked = true;
+  }
+
+  radios.forEach((radio) => {
+    radio.addEventListener("change", () => {
+      if (radio.checked) {
+        localStorage.setItem(storageKey, radio.getAttribute("c-option"));
+      }
+    });
+  });
+};
+
+saveToLocalStorage(switcher);
