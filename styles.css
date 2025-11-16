@@ -452,14 +452,13 @@ footer {
     margin: 0 auto;
 
     /* 👇 Add these lines to disregard the .article padding */
-    margin-left: 0.5em;
-    margin-right: 0.5em;
+    margin-left: 0em;
+    margin-right: 0em;
     /* You may need to add this to ensure full width */
     width: auto; 
     /* Or, set it to 100% and let the negative margins extend it */
     /* width: 100%; */
 }
-
 
 .about-container .terminal .terminal-header .green {
     background-color: #33c948;
