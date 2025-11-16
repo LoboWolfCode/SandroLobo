@@ -1,0 +1,531 @@
+:root {
+    --base-color: #f6f9fc;
+    --base-variant: #e8e9ed;
+    --text-color: #111528;
+    --secondary-text: #232738;
+    --primary-color: #3a435d;
+    --accent-color: #0071ff;
+}
+
+.darkmode {
+    --base-color: #1E2022;
+    --base-variant: #101425;
+    --text-color: #ffffff;
+    --secondary-text: #a4a5b8;
+    --primary-color: #3a435d;
+    --accent-color: #0071ff;    
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*THEME SWITCH*/
+#theme-switch {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--base-variant);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 30px;
+    right: 12%;
+    filter: drop-shadow(0px 1px 3px var(--base-variant));
+}
+
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    #theme-switch {
+      width: 100%;
+    height: 50px;
+      width: 50px;
+      padding: 0;
+      border-radius: 50%;
+      border: none;
+      background-color: var(--base-variant);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 10px;
+      right: 4%;
+      filter: drop-shadow(0px 1px 3px var(--base-variant));
+    }
+  }
+
+#theme-switch:hover {
+  cursor: pointer;
+}
+
+#theme-switch svg {
+    fill: var(--primary-color);
+}
+
+#theme-switch svg:last-child {
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child {
+    display: none;
+}
+
+.darkmode #theme-switch svg:last-child {
+    display: block;
+}
+
+#theme-switch:active {
+    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+       -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+            box-shadow: inset 0px 0px 5px #444444;
+     outline: none;
+}
+
+.container {
+    display: inline-block;
+}
+
+.nav-bar {
+    margin-bottom: -20px;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--base-color);
+    color: var(--text-color);
+    font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+    font-size: 1.2em;
+    line-height: 30px;
+    max-width: 100%;
+    margin: 50px;
+    
+}
+
+.text {
+    font-size: 6.5rem;
+    letter-spacing: 7px;
+    font-family: Monaco, Consolas, Lucida Console, monospace;
+    color: #747fe0;
+    border-right: 5px solid;
+    width: 100%;
+    margin-bottom: -1px;
+    margin-top: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: normal;
+    animation:
+        typing 1s steps(14),
+        cursor .4s step-end infinite alternate;
+}
+
+/* cursor blinking */
+@keyframes cursor {
+    50% { border-color: transparent;}
+}
+
+/* typing effect */
+@keyframes typing {
+    from {width: 0px;}
+}
+
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+        .button-container {
+          justify-content: center; /* Center-align items on smaller screens */
+        }
+      }
+
+
+body {
+    background-color: var(--base-color);
+    color: var(--text-color);
+    font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+    padding-top: 0px;
+}
+h4 {
+    font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+    font-weight: 200;
+    font-size: 1.3em;
+    line-height: 40px;
+    color: var(--text-color);
+    margin: 80px 0;
+}
+
+.sidep {
+    color: #747fe0;
+    text-decoration: none; 
+}
+
+/*Terminal*/
+.about-container {
+    margin-top: 20vh;
+    margin: 0 auto;
+}
+
+
+.about-container .terminal .terminal-header .green {
+    background-color: #33c948;
+    border: 1px solid #2dbb41;
+}
+
+.about-container .terminal .terminal-header .red {
+    background-color: #f96256;
+    border: 1px solid #f65549;
+}
+
+.about-container .terminal .terminal-header .yellow {
+    background-color: #fdbc3d;
+    border: 1px solid #ffb524;
+}
+
+.about-container .terminal .terminal-header .header-button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-left: 9px;
+}
+
+.about-container .terminal .terminal-header {
+    height: 28px;
+    background-color: var(--base-variant);
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.about-container .terminal .terminal-window {
+    background-color: #5a5d7a;
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: 0 50px 100px rgba(50, 50, 93, .15), 0 15px 35px rgba(50, 50, 93, .2), 0 5px 15px rgba(0, 0, 0, .12);
+    font-family: Monaco, Consolas, Lucida Console, monospace;
+}
+
+.about-container .terminal .terminal-window a {
+    color: #35feff;
+}
+
+.about-container .terminal .terminal-window .statement .input-statement {
+    color: #f7f7f7;
+}
+
+.about-container .terminal .terminal-window .statement .return-statement {
+    color: #e7d184;
+}
+
+.about-container .terminal .terminal-window .statement {
+    margin-bottom: 25px;
+    margin-left: 35px;
+    margin-right: 35px;
+    line-height: 24px;
+}
+
+.about-container .terminal .terminal-window .statement:last-child {
+    padding-bottom: 60px;
+}
+
+.about-container .terminal .terminal-window .statement:first-child {
+    padding-top: 35px;
+}
+
+body {
+    margin: 100px 20px 0; /* Top, right, bottom, left */
+  }
+
+  @media only screen and (max-width: 600px) {
+    /* Styles for mobile devices */
+    body {
+      font-size: 16px; /* Adjust font size as needed */
+    }
+    .body {
+      width: 10%; /* Make the container more responsive */
+    }
+    .image {
+      width: 100%; /* Make images responsive */
+    }
+  }
+
+.input-statement1 {
+    font-size: 6vw;
+    letter-spacing: 7px;
+    font-family: Monaco, Consolas, Lucida Console, monospace;
+    font-size: 16px;
+    color: #f7f7f7;
+    border-right: 5px solid;
+    width: 3%;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: normal;
+    animation:
+        typing 0.5 steps(2),
+        cursor .4s step-end infinite alternate;
+}
+
+  html {
+    min-height: 100vh;
+    font-size: 0.9em;
+    line-height: 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.kr {
+  font-size: 1rem;
+}
+
+/*SOMEHOW KEEPS BLINKER CLOSE*/
+.container {
+    display: inline-block;
+}
+
+@media (max-width: 1000px) {
+  .text {
+      font-size: 4.5em;
+  }
+}
+
+@media (max-width: 850px) {
+  .text {
+      font-size: 3.5em;
+  }
+}
+
+@media (max-width: 720px) {
+  .text {
+      font-size: 3em;
+  }
+}
+
+@media (max-width: 650px) {
+    .text {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 400px) {
+  .text {
+      font-size: 1.5em;
+  }
+}
+
+
+
+/*Project CSS*/
+.projects, .Contact-me {
+    color: var(--text-color);
+    font-family: Monaco, Consolas, Lucida Console, monospace;
+    font-weight: 500;
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    text-decoration-line:underline;
+    text-decoration-color: #747fe0;
+    text-underline-offset: 20px;
+    text-decoration-thickness: 8px;
+}
+
+
+/*CARD CSS*/
+
+.card-text {
+  height: 20rem;
+}
+
+.card-img-top {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .card-img-top {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+/* Remove extra left and right margins, due to padding */
+/* Float four columns side by side */
+.card {
+    float: none;
+    width: 25%;
+    padding: 10px 30px;
+    display: inline-block;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+    margin: 0 -5px;
+    text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+ 
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+      .card {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+      }
+  
+      /* Center cards on smaller displays */
+      .row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .card-text {
+        height: auto;
+      }
+  }
+  /* Style the counter cards */
+  .card-body {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: var(--base-variant);
+    border-radius: 8px;
+  }
+
+/*CARD TAG CSS*/
+.tag-cloud {
+    display: inline-block;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 25px;
+    background-color: #747fe0;
+    margin-top: 8px;
+  }
+
+.tag-cloud-GBS {
+  display: inline-block;
+    color: var(--text-color);
+    padding: 4px 10px;
+    border-radius: 25px;
+    border-style:dotted;
+    border-color: #C92C61;
+    background-color: var(--base-color);
+    margin-top: 8px;
+}
+
+  .tag-cloud-html {
+    display: inline-block;
+    color: var(--text-color);
+    padding: 4px 10px;
+    border-radius: 25px;
+    border-style:dotted;
+    border-color: rgb(255, 128, 0);
+    background-color: var(--base-color);
+    margin-top: 8px;
+  }
+
+  .tag-cloud-css {
+    display: inline-block;
+    color: var(--text-color);
+    padding: 4px 10px;
+    border-radius: 25px;
+    border-style:dotted;
+    border-color: #b174e0;
+    background-color: var(--base-color);
+    margin-top: 8px;
+  }
+
+  .tag-cloud-js {
+    display: inline-block;
+    color: var(--text-color);
+    padding: 4px 10px;
+    border-radius: 25px;
+    border-style:dotted;
+    border-color: #33c948;
+    background-color: var(--base-color);
+    margin-top: 8px;
+  }
+
+.tag-cloud-reactjs {
+  display: inline-block;
+  color: var(--text-color);
+  padding: 4px 10px;
+  border-radius: 25px;
+  border-style:dotted;
+  border-color: #3399c9;
+  background-color: var(--base-color);
+  margin-top: 8px;
+}
+
+.tag-cloud-json {
+  display: inline-block;
+  color: var(--text-color);
+  padding: 4px 10px;
+  border-radius: 25px;
+  border-style:dotted;
+  border-color: #3f5660;
+  background-color: var(--base-color);
+  margin-top: 8px;
+}
+
+.tag-cloud-python {
+  display: inline-block;
+  color: var(--text-color);
+  padding: 4px 10px;
+  border-radius: 25px;
+  border-style:dotted;
+  border-color: #ffd325;
+  background-color: var(--base-color);
+  margin-top: 8px;
+}
+
+.tag-cloud-Unknown {
+  display: inline-block;
+  color: var(--text-color);
+  padding: 4px 10px;
+  border-radius: 25px;
+  border-style:dotted;
+  border-color: #545246;
+  background-color: var(--base-color);
+  margin-top: 8px;
+}
+
+.btn-primary {
+    color: #747fe0;
+}
+
+/*Contact-List*/
+.contact-list {
+    margin: 0 auto;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 100px;
+}
+
+.contact-l {
+    color: #747fe0;
+}
+
+  /*Footer*/
+  .footer {
+    margin: 0 auto;
+    font-size: .8em;
+    line-height: 1.5em;
+    font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+    text-align: center;
+    padding-bottom: 50px;
+    color: #525f7f;
+}
